@@ -1,13 +1,6 @@
-n=int(input())
-l=[]
-while n>0:
-    r=n%10
-    l.append(r)
-    n=n//10
-for ele in l:
-    if l.count(ele)>1:
-        print("Not Unique Number")
-        break
+n=input()
+l=set(n)
+if len(n)==len(l):
+    print('Unique Number')
 else:
-    print("Unique Number")
-    
+    print('Not Unique Number')
